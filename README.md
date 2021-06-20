@@ -1,6 +1,6 @@
 # Serverless AWS Ruby SES example
 
-Serverless project example which sending email. `AWS Lambda` and `Amazon SES` were used.
+Serverless project example which sending email. `AWS Lambda` and `Amazon SES` were used. The repository is used for the purpose of this [blogpost](https://www.danielaniszkiewicz.com/aws-step-functions-workflow-studio.html).
 
 # Prerequistes
 
