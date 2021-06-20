@@ -1,0 +1,13 @@
+{
+  "name": "serverless-ruby-dynamodb-cron",
+  "version": "1.0.0",
+  "description": "Serverless project example which sending email. AWS Lambda and Amazon SES were used.",
+  "author": "Daniel Aniszkiewicz",
+  "license": "MIT",
+  "dependencies": {
+    "serverless-ruby-layer": "^1.5.0"
+  },
+  "devDependencies": {
+    "serverless": "^2.46.0"
+  }
+}
