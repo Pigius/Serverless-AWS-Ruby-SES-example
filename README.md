@@ -124,27 +124,27 @@ logRetentionInDays: 30
 
 ## Structure
 
-|Path|Explanation|
-|-|-|-|
-|`./src`|All code for the project.|
-|`./src/handlers/send-email`| Handler for lambda.
-|`./src/common/`|Space for common, reusable pieces of code.
-|`./src/common/adapters/ses_adapter.rb`|Adapter for the Amazon SES with the usage of AWS SDK for Ruby. Only used for sending emails.
-|`./src/common/services/send_email_service.rb`| The service object pattern is widely used within ruby/rails developers. A class that is responsible for doing only one thing. In our case is creating an email.
+| Path                                          | Explanation                                                                                                                                                     |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `./src`                                       | All code for the project.                                                                                                                                       |
+| `./src/handlers/send-email`                   | Handler for lambda.                                                                                                                                             |
+| `./src/common/`                               | Space for common, reusable pieces of code.                                                                                                                      |
+| `./src/common/adapters/ses_adapter.rb`        | Adapter for the Amazon SES with the usage of AWS SDK for Ruby. Only used for sending emails.                                                                    |
+| `./src/common/services/send_email_service.rb` | The service object pattern is widely used within ruby/rails developers. A class that is responsible for doing only one thing. In our case is creating an email. |
 
 ## Serverless plugin
 
-For this example, there are two serverless plugins used:
+For this example, there is one serverless plugins used:
 
-|Gem|Explanation|
-|-|-|-|
-|[serverless-ruby-layer](https://www.npmjs.com/package/serverless-ruby-layer)| For bundling ruby gems from `Gemfile` and deploys them to the lambda layer.
+| Plugin                | Explanation                                                               |
+|-----------------------|---------------------------------------------------------------------------|
+| [serverless-ruby-layer](https://www.npmjs.com/package/serverless-ruby-layer) | For bundling ruby gems from Gemfile and deploys them to the lambda layer. |
 
 ## Ruby gems
 
-|Gem|Explanation|
-|-|-|-|
-|`'aws-sdk-ses'`| It's a part of the AWS SDK for Ruby. Used for Amazon SES, in the case of this example - sending emails.
+| Gem           | Explanation                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------|
+| `aws-sdk-ses` | It's a part of the AWS SDK for Ruby. Used for Amazon SES, in the case of this example - sending emails. |
 
 ## Remove service
 
